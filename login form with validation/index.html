@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authentication System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- REGISTER FORM -->
+    <form id="registerForm" class="active">
+        <h2>Register</h2>
+
+        <input type="text" id="regName" placeholder="Full Name">
+        <small class="error" id="regNameError"></small>
+
+        <input type="text" id="regEmail" placeholder="Email">
+        <small class="error" id="regEmailError"></small>
+
+        <input type="password" id="regPassword" placeholder="Password">
+        <small class="error" id="regPasswordError"></small>
+
+        <button type="submit">Register</button>
+        <p class="switch">Already have account? <span id="showLogin">Login</span></p>
+        <p class="success" id="registerSuccess"></p>
+    </form>
+
+    <!-- LOGIN FORM -->
+    <form id="loginForm">
+        <h2>Login</h2>
+
+        <input type="text" id="loginEmail" placeholder="Email">
+        <small class="error" id="loginEmailError"></small>
+
+        <input type="password" id="loginPassword" placeholder="Password">
+        <small class="error" id="loginPasswordError"></small>
+
+        <button type="submit">Login</button>
+        <p class="switch">Forgot Password? <span id="showForgot">Click Here</span></p>
+        <p class="switch">Don't have account? <span id="showRegister">Register</span></p>
+        <p class="success" id="loginSuccess"></p>
+    </form>
+
+    <!-- FORGOT PASSWORD -->
+    <form id="forgotForm">
+        <h2>Forgot Password</h2>
+
+        <input type="text" id="forgotEmail" placeholder="Enter Registered Email">
+        <small class="error" id="forgotError"></small>
+
+        <input type="password" id="newPassword" placeholder="New Password">
+        <small class="error" id="newPasswordError"></small>
+
+        <button type="submit">Reset Password</button>
+        <p class="switch">Back to <span id="backToLogin">Login</span></p>
+        <p class="success" id="forgotSuccess"></p>
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
